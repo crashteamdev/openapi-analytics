@@ -1,0 +1,23 @@
+description: Информация о категории
+type: object
+properties:
+  id:
+    description: Id категории
+    type: integer
+    format: int64
+  name:
+    description: Имя категории
+    type: string
+  mp:
+    description: Маркетплейс
+    type: string
+  parent_id:
+    description: Id родительской категории (при наличии)
+    type: integer
+  childrens:
+    description: Список Id's дочерних категорий
+    type: array
+    items:
+      type: integer
+
+

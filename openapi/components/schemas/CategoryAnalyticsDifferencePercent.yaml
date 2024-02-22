@@ -1,0 +1,35 @@
+description: Аналитика категории относительно предыдущего периода, %
+type: object
+properties:
+  revenue:
+    description: Доход, %
+    type: number
+    format: double
+  revenue_per_product:
+    description: Доход на продукт, %
+    type: number
+    format: double
+  sales:
+    description: Продажи, %
+    type: number
+    format: double
+  products:
+    description: Товары, %
+    type: number
+    format: double
+  tsts:
+    description: Количество продаж, приходящееся на одну товарную позицию, %
+    type: number
+    format: double
+  average_check:
+    description: Средний чек, %
+    type: number
+    format: double
+  sellers:
+    description: Продавцы, %
+    type: number
+    format: double
+  tstc:
+    description: Кол-во продаж, приходящееся на одного продавца, %
+    type: number
+    format: double

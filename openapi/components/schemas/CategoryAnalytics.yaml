@@ -1,0 +1,35 @@
+description: Аналитика категории
+type: object
+properties:
+  revenue:
+    description: Доход в валюте
+    type: number
+    format: double
+  revenue_per_product:
+    description: Доход на продукт в валюте
+    type: number
+    format: double
+  sales:
+    description: Продажи, шт
+    type: number
+    format: double
+  products:
+    description: Товары, шт
+    type: integer
+    format: int64
+  tsts:
+    description: Количество продаж, приходящееся на одну товарную позицию
+    type: number
+    format: double
+  average_check:
+    description: Средний чек в валюте
+    type: number
+    format: double
+  sellers:
+    description: Продавцы, шт
+    type: integer
+    format: int64
+  tstc:
+    description: Кол-во продаж, приходящееся на одного продавца
+    type: number
+    format: double

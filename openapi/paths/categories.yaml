@@ -1,0 +1,29 @@
+get:
+  summary: Получение списка категорий
+  operationId: getCategories
+  tags:
+    - category
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+    - $ref: ../components/parameters/categoryId.yaml
+    - $ref: ../components/parameters/marketplace.yaml
+    - $ref: ../components/parameters/startDate.yaml
+    - $ref: ../components/parameters/endDate.yaml
+    - $ref: ../components/parameters/sort.yaml
+  responses:
+    '200':
+      description: Получен список категорий
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Categories.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
