@@ -21,7 +21,7 @@ properties:
     description: Количество продаж, приходящееся на одну товарную позицию
     type: number
     format: double
-  average_check:
+  average_bill:
     description: Средний чек в валюте
     type: number
     format: double
