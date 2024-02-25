@@ -1,0 +1,3 @@
+description: Остатки на складе, шт
+type: integer
+format: int64

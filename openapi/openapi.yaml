@@ -22,6 +22,8 @@ security:
 paths:
   '/categories':
     $ref: './paths/categories.yaml'
+  '/categories/{id}':
+    $ref: './paths/categories@{id}.yaml'
 
 components:
   securitySchemes:

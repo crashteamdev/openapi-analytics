@@ -1,0 +1,3 @@
+description: Средний чек в валюте
+type: number
+format: double
