@@ -9,8 +9,7 @@ properties:
     description: Имя категории
     type: string
   mp:
-    description: Маркетплейс
-    type: string
+    $ref: ./Marketplace.yaml
   parent_id:
     description: Id родительской категории (при наличии)
     type: integer

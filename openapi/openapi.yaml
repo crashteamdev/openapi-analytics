@@ -4,7 +4,7 @@ info:
   title: CrashTeam Analytics API
   description:
     $ref: './docs/api.md'
-  termsOfService: http://marketdb.ru/terms-of-use/
+  termsOfService: http://marketdb.pro/terms-of-use/
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
@@ -12,7 +12,7 @@ servers:
   - url: 'https://{subdomain}.marketdb.ru/{version}'
     variables:
       subdomain:
-        default: napi
+        default: api
       version:
         enum:
           - v1
