@@ -5,7 +5,7 @@ get:
     - category
   parameters:
     - $ref: ../components/parameters/requestId.yaml
-    - $ref: ../components/parameters/categoryId.yaml
+    - $ref: ../components/parameters/categoryIdInQuery.yaml
     - $ref: ../components/parameters/marketplace.yaml
     - $ref: ../components/parameters/startDate.yaml
     - $ref: ../components/parameters/endDate.yaml

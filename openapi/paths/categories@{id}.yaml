@@ -1,0 +1,27 @@
+get:
+  summary: Получение аналитики категории
+  operationId: getCurrentCategories
+  tags:
+    - category
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+    - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/startDate.yaml
+    - $ref: ../components/parameters/endDate.yaml
+  responses:
+     '200':
+       description: Получена аналитика по категории
+       content:
+         application/json:
+           schema:
+             type: array
+             items:
+               $ref: ../components/schemas/CurrentCategory.yaml
+     '400':
+       $ref: ../components/responses/BadRequest.yaml
+     '401':
+       $ref: ../components/responses/Unauthorized.yaml
+     '403':
+       $ref: ../components/responses/Forbidden.yaml
+     '404':
+       $ref: ../components/responses/NotFound.yaml

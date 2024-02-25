@@ -2,17 +2,13 @@ description: Аналитика категории
 type: object
 properties:
   revenue:
-    description: Доход в валюте
-    type: number
-    format: double
+    $ref: ./Revenue.yaml
   revenue_per_product:
     description: Доход на продукт в валюте
     type: number
     format: double
   sales:
-    description: Продажи, шт
-    type: number
-    format: double
+    $ref: ./Sales.yaml
   products:
     description: Товары, шт
     type: integer
@@ -22,9 +18,7 @@ properties:
     type: number
     format: double
   average_bill:
-    description: Средний чек в валюте
-    type: number
-    format: double
+    $ref: ./AverageBill.yaml
   sellers:
     description: Продавцы, шт
     type: integer
