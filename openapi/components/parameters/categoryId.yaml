@@ -1,0 +1,7 @@
+name: id
+in: query
+description: Id категории
+required: false
+schema:
+  type: integer
+  format: int64

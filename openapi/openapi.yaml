@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: CrashTeam Analytics API
+  description:
+    $ref: './docs/api.md'
+  termsOfService: http://marketdb.pro/terms-of-use/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  - url: 'https://{subdomain}.marketdb.ru/{version}'
+    variables:
+      subdomain:
+        default: api
+      version:
+        enum:
+          - v1
+        default: v1
+security:
+  - bearer: []
+paths:
+  '/categories':
+    $ref: './paths/categories.yaml'
+
+components:
+  securitySchemes:
+    bearer:
+      $ref: './components/security-schemes/Bearer.yaml'

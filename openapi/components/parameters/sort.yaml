@@ -1,0 +1,9 @@
+description: Массив полей для сортировки. Если необходимо отсортировать по убыванию, то передавать перед именем параметра "-".
+  Если по возрастанию - "+". Пример - "?sort=+price,-count". Это значит, что поле price отсортировано по Возарастанию, а поле count по убиванию.
+name: sort
+in: query
+required: false
+style: form
+explode: false
+schema:
+  $ref: '../schemas/Sort.yaml'

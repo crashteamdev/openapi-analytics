@@ -1,0 +1,11 @@
+type: object
+properties:
+  category:
+    $ref: ./Category.yaml
+  analytics:
+    $ref: ./CategoryAnalytics.yaml
+  previous_period_analytics:
+    $ref: ./CategoryAnalytics.yaml
+  difference_percent:
+    $ref: ./CategoryAnalyticsDifferencePercent.yaml
+
