@@ -16,7 +16,7 @@ get:
            schema:
              type: array
              items:
-               $ref: ../components/schemas/CurrentCategory.yaml
+               $ref: ../components/schemas/DailyCategoryAnalytics.yaml
      '400':
        $ref: ../components/responses/BadRequest.yaml
      '401':
