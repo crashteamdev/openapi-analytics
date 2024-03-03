@@ -7,23 +7,23 @@ properties:
     description: Доход на продукт в валюте
     type: number
     format: double
-  sales:
-    $ref: ./Sales.yaml
-  products:
+  order_amount:
+    $ref: ./OrderAmount.yaml
+  product_count:
     description: Товары, шт
     type: integer
     format: int64
-  tsts:
+  order_per_product:
     description: Количество продаж, приходящееся на одну товарную позицию
     type: number
     format: double
   average_bill:
     $ref: ./AverageBill.yaml
-  sellers:
+  seller_count:
     description: Продавцы, шт
     type: integer
     format: int64
-  tstc:
+  order_per_seller:
     description: Кол-во продаж, приходящееся на одного продавца
     type: number
     format: double

@@ -7,6 +7,6 @@ properties:
   average_bill:
     $ref: ./AverageBill.yaml
   sales:
-    $ref: ./Sales.yaml
+    $ref: ./OrderAmount.yaml
   remainings:
     $ref: ./Remainings.yaml
