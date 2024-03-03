@@ -9,27 +9,27 @@ properties:
     description: Доход на продукт, %
     type: number
     format: double
-  sales:
+  order_amount:
     description: Продажи, %
     type: number
     format: double
-  products:
+  product_count:
     description: Товары, %
     type: number
     format: double
-  tsts:
+  order_per_product:
     description: Количество продаж, приходящееся на одну товарную позицию, %
     type: number
     format: double
-  average_check:
+  average_bill:
     description: Средний чек, %
     type: number
     format: double
-  sellers:
+  seller_count:
     description: Продавцы, %
     type: number
     format: double
-  tstc:
+  order_per_seller:
     description: Кол-во продаж, приходящееся на одного продавца, %
     type: number
     format: double
