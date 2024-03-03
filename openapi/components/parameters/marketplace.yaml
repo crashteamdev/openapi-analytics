@@ -1,5 +1,5 @@
 name: mp
 in: query
-required: false
+required: true
 schema:
   $ref: '../schemas/Marketplace.yaml'

@@ -1,5 +1,5 @@
 name: endDate
 in: query
-required: false
+required: true
 schema:
   $ref: '../schemas/Date.yaml'
