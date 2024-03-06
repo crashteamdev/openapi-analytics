@@ -1,0 +1,7 @@
+name: limit
+in: query
+description: Кол-во записей на странице
+required: false
+schema:
+  type: integer
+  format: int64

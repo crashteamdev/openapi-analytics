@@ -1,0 +1,8 @@
+description: Фильтрация для товаров. Пример - "?filter[mp]=ke,uz&filter[sales]=3,10&"
+name: filter
+in: query
+required: false
+style: deepObject
+allowReserved: true
+schema:
+  $ref: '../schemas/Filter.yaml'

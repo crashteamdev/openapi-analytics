@@ -1,0 +1,7 @@
+name: page
+in: query
+description: Текущая страница
+required: false
+schema:
+  type: integer
+  format: int64
