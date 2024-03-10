@@ -1,0 +1,28 @@
+get:
+  summary: Получение сводки о товаре
+  operationId: getCurrentProduct
+  tags:
+    - category
+  parameters:
+    - $ref: ../components/headers/requestId.yaml
+    - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/productId.yaml
+    - $ref: ../components/parameters/startDate.yaml
+    - $ref: ../components/parameters/endDate.yaml
+  responses:
+    '200':
+      description: Получена аналитика товара
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/CurrentProduct.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
