@@ -1,11 +1,11 @@
 get:
   summary: Получение сводки о товаре
-  operationId: getCurrentProduct
+  operationId: getProductAnalytics
   tags:
-    - category
+    - product
   parameters:
     - $ref: ../components/headers/requestId.yaml
-    - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/marketplace.yaml
     - $ref: ../components/parameters/productId.yaml
     - $ref: ../components/parameters/startDate.yaml
     - $ref: ../components/parameters/endDate.yaml
@@ -17,7 +17,7 @@ get:
           schema:
             type: array
             items:
-              $ref: ../components/schemas/CurrentProduct.yaml
+              $ref: ../components/schemas/ProductAnalytics.yaml
     '400':
       $ref: ../components/responses/BadRequest.yaml
     '401':

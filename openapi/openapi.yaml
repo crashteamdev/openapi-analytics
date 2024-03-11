@@ -26,8 +26,8 @@ paths:
     $ref: './paths/categories@{id}.yaml'
   '/categories/{id}/products':
     $ref: './paths/categories@{id}@products.yaml'
-  '/categories/{id}/products/{productId}':
-    $ref: './paths/categories@{id}@products@{productId}.yaml'
+  '/products/{productId}':
+    $ref: './paths/products@{productId}.yaml'
 
 components:
   securitySchemes:

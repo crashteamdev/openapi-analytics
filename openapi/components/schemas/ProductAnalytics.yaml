@@ -9,6 +9,8 @@ properties:
   name:
     description: Имя товара
     type: string
+  image_url:
+    description: Ссылка на изображение товара
   revenue:
     $ref: ./Revenue.yaml
   full_price:
@@ -23,7 +25,7 @@ properties:
     description: Количество отзывов
     type: integer
     format: int64
-  created_at:
+  appear_at:
     $ref: ./Date.yaml
   price_chart:
     description: График цены

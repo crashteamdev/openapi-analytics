@@ -9,6 +9,8 @@ properties:
   name:
     description: Имя товара
     type: string
+  image_url:
+    description: Ссылка на изображение товара
   revenue:
     $ref: ./Revenue.yaml
   sales:
@@ -26,7 +28,7 @@ properties:
     type: integer
     format: int64
   sales_chart:
-    description: Спрос
+    description: График продаж
     type: array
     items:
       - $ref: ./OrderAmount.yaml

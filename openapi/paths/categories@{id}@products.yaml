@@ -5,6 +5,7 @@ get:
     - category
   parameters:
     - $ref: ../components/headers/requestId.yaml
+    - $ref: ../components/parameters/marketplace.yaml
     - $ref: ../components/parameters/categoryIdInPath.yaml
     - $ref: ../components/parameters/sort.yaml
     - $ref: ../components/parameters/filterProducts.yaml
