@@ -1,0 +1,7 @@
+name: productId
+in: path
+description: Id продукта
+required: true
+schema:
+  type: integer
+  format: int64

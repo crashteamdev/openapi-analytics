@@ -11,12 +11,10 @@ properties:
     type: string
   revenue:
     $ref: ./Revenue.yaml
-  sales:
-    $ref: ./OrderAmount.yaml
+  full_price:
+    $ref: ./Price.yaml
   price:
     $ref: ./Price.yaml
-  remainings:
-    $ref: ./Remainings.yaml
   rating:
     description: Рейтинг товара
     type: number
@@ -25,8 +23,25 @@ properties:
     description: Количество отзывов
     type: integer
     format: int64
+  created_at:
+    $ref: ./Date.yaml
+  price_chart:
+    description: График цены
+    type: array
+    items:
+     - $ref: ./Price.yaml
+  revenue_chart:
+    description: График выручки
+    type: array
+    items:
+      - $ref: ./Revenue.yaml
   sales_chart:
-    description: Спрос
+    description: График продаж
     type: array
     items:
       - $ref: ./OrderAmount.yaml
+  remainings_chart:
+    description: График остатков
+    type: array
+    items:
+      - $ref: ./Remainings.yaml
