@@ -21,13 +21,12 @@ properties:
     description: Рейтинг товара
     type: number
     format: double
-  number_reviews:
+  reviews:
     description: Количество отзывов
     type: integer
     format: int64
-  demand:
+  sales_chart:
     description: Спрос
     type: array
     items:
-      - $ref: ./Date.yaml
       - $ref: ./OrderAmount.yaml

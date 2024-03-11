@@ -26,10 +26,22 @@ properties:
   created_at:
     $ref: ./Date.yaml
   price_chart:
-    $ref: ./Price.yaml
+    description: График цены
+    type: array
+    items:
+     - $ref: ./Price.yaml
   revenue_chart:
-    $ref: ./Revenue.yaml
+    description: График выручки
+    type: array
+    items:
+      - $ref: ./Revenue.yaml
   sales_chart:
-    $ref: ./OrderAmount.yaml
+    description: График продаж
+    type: array
+    items:
+      - $ref: ./OrderAmount.yaml
   remainings_chart:
-    $ref: ./Remainings.yaml
+    description: График остатков
+    type: array
+    items:
+      - $ref: ./Remainings.yaml
