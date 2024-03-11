@@ -4,7 +4,7 @@ get:
   tags:
     - category
   parameters:
-    - $ref: ../components/parameters/requestId.yaml
+    - $ref: ../components/headers/requestId.yaml
     - $ref: ../components/parameters/categoryIdInPath.yaml
     - $ref: ../components/parameters/marketplace.yaml
     - $ref: ../components/parameters/startDate.yaml

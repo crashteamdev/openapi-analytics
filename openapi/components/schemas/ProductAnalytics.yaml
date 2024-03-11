@@ -1,0 +1,49 @@
+type: object
+properties:
+  mp:
+    $ref: ./Marketplace.yaml
+  product_mp_id:
+    description: Id товара на маркетплейсе
+    type: integer
+    format: int64
+  name:
+    description: Имя товара
+    type: string
+  image_url:
+    description: Ссылка на изображение товара
+  revenue:
+    $ref: ./Revenue.yaml
+  full_price:
+    $ref: ./Price.yaml
+  price:
+    $ref: ./Price.yaml
+  rating:
+    description: Рейтинг товара
+    type: number
+    format: double
+  reviews:
+    description: Количество отзывов
+    type: integer
+    format: int64
+  appear_at:
+    $ref: ./Date.yaml
+  price_chart:
+    description: График цены
+    type: array
+    items:
+     - $ref: ./Price.yaml
+  revenue_chart:
+    description: График выручки
+    type: array
+    items:
+      - $ref: ./Revenue.yaml
+  sales_chart:
+    description: График продаж
+    type: array
+    items:
+      - $ref: ./OrderAmount.yaml
+  remainings_chart:
+    description: График остатков
+    type: array
+    items:
+      - $ref: ./Remainings.yaml

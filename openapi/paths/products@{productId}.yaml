@@ -1,24 +1,23 @@
 get:
-  summary: Получение списка категорий
-  operationId: getCategories
+  summary: Получение сводки о товаре
+  operationId: getProductAnalytics
   tags:
-    - category
+    - product
   parameters:
     - $ref: ../components/headers/requestId.yaml
-    - $ref: ../components/parameters/categoryIdInQuery.yaml
     - $ref: ../components/parameters/marketplace.yaml
+    - $ref: ../components/parameters/productId.yaml
     - $ref: ../components/parameters/startDate.yaml
     - $ref: ../components/parameters/endDate.yaml
-    - $ref: ../components/parameters/sort.yaml
   responses:
     '200':
-      description: Получен список категорий
+      description: Получена аналитика товара
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: ../components/schemas/Categories.yaml
+              $ref: ../components/schemas/ProductAnalytics.yaml
     '400':
       $ref: ../components/responses/BadRequest.yaml
     '401':

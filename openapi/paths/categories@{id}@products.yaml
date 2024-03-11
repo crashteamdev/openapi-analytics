@@ -1,0 +1,30 @@
+get:
+  summary: Получение списка товаров в категории
+  operationId: getCategoriesProducts
+  tags:
+    - category
+  parameters:
+    - $ref: ../components/headers/requestId.yaml
+    - $ref: ../components/parameters/marketplace.yaml
+    - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/sort.yaml
+    - $ref: ../components/parameters/filterProducts.yaml
+    - $ref: ../components/parameters/paginationPage.yaml
+    - $ref: ../components/parameters/paginationLimit.yaml
+  responses:
+    '200':
+      description: Получен список товаров категории
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Products.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml

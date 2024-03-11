@@ -1,0 +1,34 @@
+type: object
+properties:
+  mp:
+    $ref: ./Marketplace.yaml
+  product_mp_id:
+    description: Id товара на маркетплейсе
+    type: integer
+    format: int64
+  name:
+    description: Имя товара
+    type: string
+  image_url:
+    description: Ссылка на изображение товара
+  revenue:
+    $ref: ./Revenue.yaml
+  sales:
+    $ref: ./OrderAmount.yaml
+  price:
+    $ref: ./Price.yaml
+  remainings:
+    $ref: ./Remainings.yaml
+  rating:
+    description: Рейтинг товара
+    type: number
+    format: double
+  reviews:
+    description: Количество отзывов
+    type: integer
+    format: int64
+  sales_chart:
+    description: График продаж
+    type: array
+    items:
+      - $ref: ./OrderAmount.yaml
