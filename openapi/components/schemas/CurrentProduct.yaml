@@ -19,33 +19,17 @@ properties:
     description: Рейтинг товара
     type: number
     format: double
-  number_reviews:
+  reviews:
     description: Количество отзывов
     type: integer
     format: int64
   created_at:
     $ref: ./Date.yaml
   price_chart:
-    description: График цены
-    type: array
-    items:
-      - $ref: ./Date.yaml
-      - $ref: ./Price.yaml
+    $ref: ./Price.yaml
   revenue_chart:
-    description: График выручки
-    type: array
-    items:
-      - $ref: ./Date.yaml
-      - $ref: ./Revenue.yaml
+    $ref: ./Revenue.yaml
   sales_chart:
-    description: График продаж
-    type: array
-    items:
-      - $ref: ./Date.yaml
-      - $ref: ./OrderAmount.yaml
+    $ref: ./OrderAmount.yaml
   remainings_chart:
-    description: График остатков
-    type: array
-    items:
-      - $ref: ./Date.yaml
-      - $ref: ./Remainings.yaml
+    $ref: ./Remainings.yaml
