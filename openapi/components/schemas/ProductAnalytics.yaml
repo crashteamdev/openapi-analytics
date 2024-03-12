@@ -11,6 +11,10 @@ properties:
     type: string
   image_url:
     description: Ссылка на изображение товара
+  seller:
+    $ref: ./ProductSeller.yaml
+  category:
+    $ref: ./ProductCategory.yaml
   revenue:
     $ref: ./Revenue.yaml
   full_price:

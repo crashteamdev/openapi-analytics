@@ -1,0 +1,10 @@
+type: object
+properties:
+  sellerLink:
+    type: string
+    description: Уникальный идентификатор (ссылка) на магазин в маркетплейсе
+    example: voskpro
+  sellerTitle:
+    type: string
+    description: Наименование продавца
+    example: Воск PRO

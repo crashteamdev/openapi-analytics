@@ -1,0 +1,9 @@
+type: object
+properties:
+  id:
+    description: Id категории
+    type: integer
+    format: int64
+  name:
+    description: Имя категории
+    type: string
