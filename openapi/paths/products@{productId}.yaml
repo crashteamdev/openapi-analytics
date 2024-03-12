@@ -15,9 +15,7 @@ get:
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: ../components/schemas/ProductAnalytics.yaml
+            $ref: ../components/schemas/ProductAnalytics.yaml
     '400':
       $ref: ../components/responses/BadRequest.yaml
     '401':
