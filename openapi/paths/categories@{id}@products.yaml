@@ -7,6 +7,8 @@ get:
     - $ref: ../components/headers/requestId.yaml
     - $ref: ../components/parameters/marketplace.yaml
     - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/startDate.yaml
+    - $ref: ../components/parameters/endDate.yaml
     - $ref: ../components/parameters/sort.yaml
     - $ref: ../components/parameters/filterProducts.yaml
     - $ref: ../components/parameters/paginationPage.yaml
