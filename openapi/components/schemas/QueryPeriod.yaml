@@ -1,0 +1,3 @@
+description: Период за который запрашиваются данные
+type: string
+enum: [week, two_week, month, two_month]

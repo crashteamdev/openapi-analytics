@@ -1,0 +1,5 @@
+name: period
+in: query
+required: true
+schema:
+  $ref: '../schemas/QueryPeriod.yaml'
