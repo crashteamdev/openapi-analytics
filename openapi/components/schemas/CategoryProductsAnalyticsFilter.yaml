@@ -1,6 +1,12 @@
 type: object
 additionalProperties: false
 properties:
+  name:
+    description: Название товара
+    type: string
+  productId:
+    description: Идентификатор товара
+    type: string
   revenue:
     description: Выручка в валюте
     type: string
