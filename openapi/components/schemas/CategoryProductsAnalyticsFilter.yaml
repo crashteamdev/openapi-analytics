@@ -1,9 +1,6 @@
 type: object
 additionalProperties: false
 properties:
-  mp:
-    description: Маркетплейс
-    type: string
   revenue:
     description: Выручка в валюте
     type: string

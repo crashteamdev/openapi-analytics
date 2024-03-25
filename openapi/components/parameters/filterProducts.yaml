@@ -5,4 +5,4 @@ required: false
 style: deepObject
 allowReserved: true
 schema:
-  $ref: '../schemas/Filter.yaml'
+  $ref: '../schemas/CategoryProductsAnalyticsFilter.yaml'
