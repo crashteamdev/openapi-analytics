@@ -11,6 +11,7 @@ properties:
     type: string
   image_url:
     description: Ссылка на изображение товара
+    type: string
   revenue:
     $ref: ./Revenue.yaml
   order_amount:
