@@ -2,11 +2,11 @@ type: object
 properties:
   mp:
     $ref: ./Marketplace.yaml
-  product_mp_id:
+  product_id:
     description: Id товара на маркетплейсе
     type: integer
     format: int64
-  name:
+  title:
     description: Имя товара
     type: string
   image_url:
@@ -25,7 +25,7 @@ properties:
     description: Рейтинг товара
     type: number
     format: double
-  reviews:
+  reviews_amount:
     description: Количество отзывов
     type: integer
     format: int64

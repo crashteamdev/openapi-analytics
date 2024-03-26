@@ -20,7 +20,7 @@ get:
           schema:
             type: array
             items:
-              $ref: ../components/schemas/Products.yaml
+              $ref: ../components/schemas/CategoryProductsAnalytics.yaml
     '400':
       $ref: ../components/responses/BadRequest.yaml
     '401':
