@@ -10,18 +10,18 @@ properties:
   revenue:
     description: Выручка в валюте
     type: string
-  sales:
+  order_amount:
     description: Продажи, шт
     type: string
   price:
     description: Цена в валюте
     type: string
-  remainings:
+  available_amount:
     description: Остатки на складе, шт
     type: string
   rating:
     description: Рейтинг
     type: string
-  number_reviews:
+  reviews_amount:
     description: Кол-во отзывов
     type: string
