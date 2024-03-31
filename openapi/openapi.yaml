@@ -20,14 +20,16 @@ servers:
 security:
   - bearer: []
 paths:
-  '/categories':
+  '/categories/stats':
     $ref: './paths/categories.yaml'
-  '/categories/{id}':
+  '/categories/{id}/stats':
     $ref: './paths/categories@{id}.yaml'
-  '/categories/{id}/products':
+  '/categories/{id}/products/stats':
     $ref: './paths/categories@{id}@products.yaml'
-  '/products/{productId}':
+  '/products/{productId}/stats':
     $ref: './paths/products@{productId}.yaml'
+  '/categories/{id}/info':
+    $ref: './paths/categories-info@{id}.yaml'
 
 components:
   securitySchemes:

@@ -1,0 +1,24 @@
+get:
+  summary: Получение данных о категории
+  operationId: getCategoryInfo
+  tags:
+    - category
+  parameters:
+    - $ref: ../components/headers/requestId.yaml
+    - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/marketplace.yaml
+  responses:
+     '200':
+       description: Получены данных по категории
+       content:
+         application/json:
+           schema:
+             $ref: ../components/schemas/Category.yaml
+     '400':
+       $ref: ../components/responses/BadRequest.yaml
+     '401':
+       $ref: ../components/responses/Unauthorized.yaml
+     '403':
+       $ref: ../components/responses/Forbidden.yaml
+     '404':
+       $ref: ../components/responses/NotFound.yaml
