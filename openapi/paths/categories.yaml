@@ -7,8 +7,7 @@ get:
     - $ref: ../components/headers/requestId.yaml
     - $ref: ../components/parameters/categoryIdInQuery.yaml
     - $ref: ../components/parameters/marketplace.yaml
-    - $ref: ../components/parameters/startDate.yaml
-    - $ref: ../components/parameters/endDate.yaml
+    - $ref: ../components/parameters/queryPeriod.yaml
     - $ref: ../components/parameters/sort.yaml
   responses:
     '200':
