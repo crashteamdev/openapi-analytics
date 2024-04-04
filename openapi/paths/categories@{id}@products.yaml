@@ -9,7 +9,7 @@ get:
     - $ref: ../components/parameters/categoryIdInPath.yaml
     - $ref: ../components/parameters/queryPeriod.yaml
     - $ref: ../components/parameters/sort.yaml
-    - $ref: ../components/parameters/filterProducts.yaml
+    - $ref: ../components/parameters/collectionFilter.yaml
     - $ref: ../components/parameters/paginationPage.yaml
     - $ref: ../components/parameters/paginationLimit.yaml
   responses:

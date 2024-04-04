@@ -1,0 +1,24 @@
+name: filter
+in: query
+description: |-
+  Fields and values in the filter are separated with :: ?filter=firstName:John.
+
+  Multiple filters are separated with ;: ?filter=firstName:John;lastName:Doe.
+  They are joined with AND logic. Example: firstName:John AND lastName:Doe.
+  
+  To use multiple values, use , as values separators: ?filter=firstName:John,Bob.
+  Multiple values specified for a field are joined with OR logic. Example: firstName:John OR firstName:Bob.
+  
+  To negate the filter, use !: ?filter=firstName:!John.
+  
+  To negate the filter, use ~ ?filter=firstName:~John.
+  
+  To negate multiple values, use: ?filter=firstName:!John,!Bob. This filter rule excludes all Johns and Bobs from the response.
+  
+  To use range filters, use: ?filter=amount:1..10.
+  
+  To use a gte (greater than or equals) filter, use: ?filter=amount:1... This also works for datetime-based fields.
+  
+  To use a lte (less than or equals) filter, use: ?filter=amount:..10. This also works for datetime-based fields.
+schema:
+  type: string
