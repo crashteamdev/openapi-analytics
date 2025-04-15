@@ -30,6 +30,8 @@ paths:
     $ref: './paths/products@{productId}.yaml'
   '/categories/{id}/info':
     $ref: './paths/categories-info@{id}.yaml'
+  '/demo':
+    $ref: './paths/demo-give-access.yaml'
 
 components:
   securitySchemes:

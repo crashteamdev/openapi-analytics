@@ -1,0 +1,19 @@
+get:
+  summary: Выдать демо доступ
+  operationId: getDemoAccess
+  tags:
+    - subscription
+  parameters:
+    - $ref: ../components/headers/requestId.yaml
+    - $ref: ../components/parameters/demoTokenQuery.yaml
+  responses:
+    '200':
+      description: Демо доступ успешно выдан
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml

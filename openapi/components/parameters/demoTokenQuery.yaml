@@ -1,0 +1,6 @@
+name: id
+in: query
+description: Демо токен
+required: true
+schema:
+  type: string
