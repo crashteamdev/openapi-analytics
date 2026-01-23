@@ -1,0 +1,26 @@
+get:
+  summary: Получение трендовых товаров в категории
+  operationId: getTrendingCategoryProducts
+  tags:
+    - category
+  parameters:
+    - $ref: ../components/headers/requestId.yaml
+    - $ref: ../components/parameters/categoryIdInPath.yaml
+    - $ref: ../components/parameters/marketplace.yaml
+  responses:
+    '200':
+      description: Получен список трендовых товаров категории
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/TrendingProduct.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
