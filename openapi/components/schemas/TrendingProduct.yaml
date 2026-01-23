@@ -1,0 +1,12 @@
+type: object
+properties:
+  product_id:
+    description: Id товара на маркетплейсе
+    type: integer
+    format: int64
+  name:
+    description: Имя товара
+    type: string
+  photo_key:
+    description: Ключ изображения товара
+    type: string

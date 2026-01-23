@@ -26,6 +26,8 @@ paths:
     $ref: './paths/categories@{id}.yaml'
   '/categories/{id}/products/stats':
     $ref: './paths/categories@{id}@products.yaml'
+  '/categories/{id}/products/trending':
+    $ref: './paths/categories@{id}@products@trending.yaml'
   '/products/{productId}/stats':
     $ref: './paths/products@{productId}.yaml'
   '/categories/{id}/info':
